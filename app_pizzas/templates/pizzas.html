@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+    <div>
+        <h1>Editor de productos</h1>
+        <button class="light-btn"><a href="{% url 'pizzas:create' %}">Haga click aqui para crear un nuevo producto</a></button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Nombre</th>
+                    <th>Detalle</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pizza in pizza_list %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ pizza.nombre }}</td>
+                    <td><a href="{% url 'pizzas:detail' pizza.id %}">+</a></td>
+                    <td><a href="{% url 'pizzas:update' pizza.id %}">+</a></td>
+                    <td><a href="{% url 'pizzas:delete' pizza.id %}">+</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</main>
+<link rel="stylesheet" href="{% static './css/app_templates.css' %}">
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <h1>.</h1>
+    <div class="create">
+        <form method="post">
+            <h2>CREA UN PRODUCTO</h2>
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <div class="button-container">
+              <input type="submit" value="{{ tipo }}" />
+              <a class="volver" href="{% url 'pizzas:all' %}">Volver al Inicio</a>
+            </div>
+        </form>
+    </div> 
+<link rel="stylesheet" href="{% static './css/app_templates.css' %}">
+</div>
+
+{% endblock %}

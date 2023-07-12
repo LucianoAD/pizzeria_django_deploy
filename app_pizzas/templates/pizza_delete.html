@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block content %}
+
+<main>
+    <div class="create">
+        <h1 style="color: rgba(13, 22, 33, 255);">.</h1>
+        <h3>Estas seguro que deseas borrar este producto?</h3>
+        <h3>{{pizza.nombre}}</h3>
+        <form method="post">
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <input type="submit" value="{{ tipo }}" />
+            <a class="volver" href="{% url 'pizzas:all' %}">Cancelar</a>
+        </form>
+
+        
+    </div>
+    <link rel="stylesheet" href="{% static './css/app_templates.css' %}">
+</main>
+{% endblock %}

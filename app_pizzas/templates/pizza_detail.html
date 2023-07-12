@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <div class="create">
+        <h1 style="color: rgba(13, 22, 33, 255);">{{pizza.nombre}}</h1>
+        {% for label, value in pizza.get_fields %}
+
+        <p>{{label | upper}}</p>
+        <p>{{value}}</p>
+
+        {% endfor %}
+
+        <a class="volver" href="{% url 'pizzas:all' %}">Volver al inicio</a>
+    </div>
+    <link rel="stylesheet" href="{% static './css/app_templates.css' %}">
+</main>
+{% endblock %}
