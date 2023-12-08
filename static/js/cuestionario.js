@@ -131,12 +131,12 @@ function mostrarResultado(correcto) {
 
   if (correcto) {
       resultado.style.backgroundColor = "green";
-      imagenResultado.src = "./assets/img/pikachu.png";
+      imagenResultado.src = "./static/img/pikachu.png";
       mensajeResultado.textContent = "¡Excelente! Tu código de descuento es:";
       codigoDescuento.textContent = generarCodigoDescuento();
   } else {
       resultado.style.backgroundColor = "rgba(13, 22, 33, 255)";
-      imagenResultado.src = "./assets/img/nino_inspirado.jpg";
+      imagenResultado.src = "./static/img/nino_inspirado.jpg";
       mensajeResultado.textContent = "Al menos una respuesta es incorrecta, no te desanimes intentalo de nuevo!.";
       codigoDescuento.textContent = "";
   }
