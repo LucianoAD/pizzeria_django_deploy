@@ -1,9 +1,10 @@
+
+
+
 # pizzeria_django_deploy
-
-https://pizzeriaanderson.pythonanywhere.com/
-
+http://luad.pythonanywhere.com/
 CRUD:
-https://pizzeriaanderson.pythonanywhere.com/pizzas/
+http://luad.pythonanywhere.com/pizzas/
 
 Integrantes:
 Luciano
