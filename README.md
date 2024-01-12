@@ -53,17 +53,17 @@ pizzeria_django_deploy
 
 ## :rocket:Funcionalidades
 
-Modelos y vistas para crear, actualizar y eliminar productos.
-Puntos finales de la API para interactuar con los datos de los productos.
-Implementación del protocolo HTTP y los métodos GET, POST, PUT y DELETE.
-Utilización del formato JSON para enviar y recibir datos desde la base de datos.
+- Modelos y vistas para crear, actualizar y eliminar productos.
+- Puntos finales de la API para interactuar con los datos de los productos.
+- Implementación del protocolo HTTP y los métodos GET, POST, PUT y DELETE.
+- Utilización del formato JSON para enviar y recibir datos desde la base de datos.
    
-## :wrench: Configuración y Despliegue
+## :wrench: Configuración y despliegue
 
-Clonar el repositorio.
-Instalar dependencias con pip install -r requirements.txt.
-Migrar la base de datos con python manage.py migrate.
-Ejecutar el servidor de desarrollo con python manage.py runserver.
+- Clonar el repositorio.
+- Instalar dependencias con pip install -r requirements.txt.
+- Migrar la base de datos con python manage.py migrate.
+- Ejecutar el servidor de desarrollo con python manage.py runserver.
 
 ## ✔ Puntos finales de la API
 
