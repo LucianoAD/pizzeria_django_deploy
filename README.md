@@ -70,6 +70,7 @@ pizzeria_django_deploy
 - API de Pizzas: http://luad.pythonanywhere.com/
 - CRUD: http://luad.pythonanywhere.com/pizzas/
 
+See more about frontend development here: https://github.com/LucianoAD/ProyectoGrupo8_CaC
 
 ## 🧑‍🤝‍🧑🧑‍🤝‍🧑 Integrantes:
 
